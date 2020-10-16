@@ -76,6 +76,12 @@ public class UserController {
 		return userForm;
 		
 	}
+    
+    
+    @GetMapping("/")
+    String hello() {
+    	return "hello" ;
+    }
 	
 	@RequestMapping(value = "/findUser/{email}")
 	@CrossOrigin("*")
